@@ -1,14 +1,14 @@
 {
-  "name": "Backend",
+  "name": "WorkoutHistory",
   "version": "1.0.0",
-  "description": "",
+  "description": "Final Project for Fullstack Javascript",
   "main": "app.js",
   "scripts": {
     "start": "node database/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [],
-  "author": "",
+  "author": "Keith Bailey",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -17,5 +17,9 @@
     "pug": "^3.0.2",
     "sequelize": "^6.5.0",
     "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.3",
+    "mocha": "^8.3.1"
   }
 }
