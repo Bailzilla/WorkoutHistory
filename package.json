@@ -17,6 +17,7 @@
     "express": "^4.17.1",
     "pug": "^3.0.2",
     "sequelize": "^6.5.0",
+    "sequelize-cli": "^6.2.0",
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
