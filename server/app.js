@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.set('view engine', 'pug');
 
 app.get('/',(req, res) => {
-    res.render('index',{name:req.cookies.username});
+    res.render('index', {name:req.cookies.username});
 });
 
 // app.get('/user',(req, res) => {
