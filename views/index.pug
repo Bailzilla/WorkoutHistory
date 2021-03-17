@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  if name     
+    h2 Welcome, #{name}!
+  else 
+    form(action='/users', method='post')
+      label Please enter your username: 
+        input(type='text', name='username')
+      button(type='submit') Submit
