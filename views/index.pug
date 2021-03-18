@@ -4,10 +4,22 @@ block content
   h1= title
   p Welcome to #{title}
 
-  if name     
-    h2 Welcome, #{name}!
-  else 
-    form(action='/users', method='post')
-      label Please enter your username: 
-        input(type='text', name='username')
-      button(type='submit') Submit
+  //- if name     
+  //-   h2 Welcome, #{name}!
+  //- else
+    form(action='/', method='post')
+              //-       label Please enter your username: 
+              //-         input(type='text', name=' username')
+              //-       button(type='submit') Submit
+
+
+    div
+      label(for="title") Title:
+      input(type="text", name="title" )
+    div
+      label(for="author") Author:
+      input(type="text", name="author" )
+    div
+      label(for="body") Body:
+      textarea(name="body")
+    input(type="submit")
