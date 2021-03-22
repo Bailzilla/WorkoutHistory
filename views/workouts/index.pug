@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  div.subheader
+    h2 Workouts
+    a(href="/workouts/new", class="btn-new") Create Workout &#43;
+    
+  each workout in workouts
+    workout
+      h3= workout.title
+      //- include by_line
+      p= workout.body
+      a(href = "/workouts/" + workout.id) Read More &rarr;

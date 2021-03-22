@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+  h2= workout.title
+  include by_line
+  p= workout.body
+  a(href="../") &larr; Back 
+  | | 
+  a(href="/workouts/" + workout.id + "/edit") Edit Workout 
+  | | 
+  a(href="/workouts/" + workout.id + "/delete") Delete Workout

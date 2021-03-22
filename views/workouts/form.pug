@@ -1,0 +1,10 @@
+div
+  label(for="title") Title:
+  input(type="text", name="title" value=workout.title)
+div
+  label(for="author") Author:
+  input(type="text", name="author" value=workout.author)
+div
+  label(for="body") Body:
+  textarea(name="body")= workout.body
+input(type="submit")
