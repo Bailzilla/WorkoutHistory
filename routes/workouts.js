@@ -13,7 +13,7 @@ function asyncHandler(cb){
   }
 }
 
-/* GET articles listing. */
+/* GET workouts listing. */
 router.get('/', asyncHandler(async (req, res) => {
   const workouts = await Workout.findAll({ order: [["createdAt", "DESC"]] });
   res.render("workouts/index", { workouts, title: "Keep it moving!" });
@@ -42,7 +42,7 @@ router.get("/:id", asyncHandler(async (req, res) => {
   res.render("workouts/show", { workout, title: workout.title }); 
 })); 
 
-/* Update an workout. */
+/* Update a workout. */
 router.post('/:id/edit', asyncHandler(async (req, res) => {
   const workout = await Workout.findByPk(req.params.id);
   await workout.update(req.body);
