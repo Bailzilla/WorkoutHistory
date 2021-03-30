@@ -48,3 +48,15 @@ describe('#GET /workouts', () => {
     });
 });
 
+describe('#GET /workouts', () => {
+    it('should render the Delete Workout page', () => {
+        console.log('test running');
+        return request(app).get('/workouts/1/delete')
+            .then((res) => {
+                assert.equal(res.status, 200);
+                assert.match(res.text, /<input type="submit" value="Yes, I'm sure">/);
+            });
+    });
+});
+
+
