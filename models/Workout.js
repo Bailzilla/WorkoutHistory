@@ -11,3 +11,4 @@ module.exports = (sequelize) => {
 
   return Workout;
 };
+
