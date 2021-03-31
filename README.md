@@ -17,6 +17,7 @@ An ExpressJS Backend Application that utilizes Sequelize to communicate with a S
 
 ### Requirements
 1. Build an ExpressJS Backend Application 
+
 A. Build at least three routes
 In the routes folder there are 2 files with a combined 9 total routes. They use either GET or POST methods to performd CRUD operations. As well as using Sequelize, the routes render data in the browser using the PUG templating engine. 
 
