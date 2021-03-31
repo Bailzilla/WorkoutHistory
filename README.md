@@ -13,7 +13,7 @@ To test:
 
 
 ## What is this project?
-An ExpressJS Backend Application that utilizes Sequelize to communicate with a Sqlite database. I've encorporated Mocha and Chai to run tests on the api routes. My inspiration was to have a place where I could track my workouts. This allows the user to create, edit, and delete workouts from their saved history. 
+An ExpressJS Backend Application that utilizes Sequelize to communicate with a Sqlite database. I've encorporated Supertest to run tests on the api routes. My inspiration was to have a place where I could track my workouts. This allows the user to create, edit, and delete workouts from their saved history. 
 
 ### Requirements
 1. Build an ExpressJS Backend Application 
